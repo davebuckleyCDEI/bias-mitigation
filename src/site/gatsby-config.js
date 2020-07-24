@@ -41,5 +41,16 @@ module.exports = {
       },
     },
     `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-gdpr-cookies`,
+      options: {
+        googleAnalytics: {
+          trackingId: 'UA-173229929-1',
+          cookieName: 'gatsby-gdpr-google-analytics',
+          anonymize: true
+        },
+        environments: ['production', 'development']
+      },
+    },
   ],
 }

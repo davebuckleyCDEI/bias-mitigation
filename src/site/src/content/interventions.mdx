@@ -4,6 +4,17 @@ title: Interventions
 
 import Collapse from "../components/collapse"
 import { PlotLoader } from "../components/siteplotly"
+import CookieConsent from "react-cookie-consent"
+
+<CookieConsent
+    location="bottom"
+    buttonText="Accept and close"
+    declineButtonText="Decline"
+    style={{ background: "#262445" }}
+    cookieName="gatsby-gdpr-google-analytics">
+    We use analytics cookies to send information about how our site is used to Google Analytics.
+    <br/><br/>We use this information to improve our site. Let us know if this is OK. We'll use a cookie to save your choice.
+</CookieConsent>
 
 Having seen that a model trained without intervention leads to unfair outcomes, we now try to apply some of the mitigation algorithms from the literature. Where possible we use existing open source implementations. Some algorithms we have included our own implementations. All of our analysis can be explored on [Binder][binder] and the code is all available on [GitHub][github].
 

@@ -3,6 +3,17 @@ title: Training a biased model
 ---
 
 import { PlotLoader } from "../components/siteplotly"
+import CookieConsent from "react-cookie-consent"
+
+<CookieConsent
+    location="bottom"
+    buttonText="Accept and close"
+    declineButtonText="Decline"
+    style={{ background: "#262445" }}
+    cookieName="gatsby-gdpr-google-analytics">
+    We use analytics cookies to send information about how our site is used to Google Analytics.
+    <br/><br/>We use this information to improve our site. Let us know if this is OK. We'll use a cookie to save your choice.
+</CookieConsent>
 
 This section goes into more detail on testing for bias and applying definitions of fairness to the data sets. It therefore requires a higher level of technical comprehension.
 

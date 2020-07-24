@@ -4,6 +4,17 @@ title: Finance - the Adult data set
 
 import Collapse from "../components/collapse"
 import { PlotLoader } from "../components/siteplotly"
+import CookieConsent from "react-cookie-consent"
+
+<CookieConsent
+    location="bottom"
+    buttonText="Accept and close"
+    declineButtonText="Decline"
+    style={{ background: "#262445" }}
+    cookieName="gatsby-gdpr-google-analytics">
+    We use analytics cookies to send information about how our site is used to Google Analytics.
+    <br/><br/>We use this information to improve our site. Let us know if this is OK. We'll use a cookie to save your choice.
+</CookieConsent>
 
 The first data set we will be considering is the Adult data set from the [UCI Machine learning repository][adult-data]. It was derived from the US Census, and contains demographic information from several thousand individuals. The typical task on this data set is to predict whether or not an individual is a high earner from their demographics. You can see the details of our data acquisition and preprocessing in [this notebook][binder-preprocessing], and you can see the details of the below data exploration in [this notebook][binder-data].
 

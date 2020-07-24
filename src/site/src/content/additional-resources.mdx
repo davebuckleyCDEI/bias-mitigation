@@ -1,6 +1,17 @@
 ---
 title: Additional Resources
 ---
+import CookieConsent from "react-cookie-consent"
+
+<CookieConsent
+    location="bottom"
+    buttonText="Accept and close"
+    declineButtonText="Decline"
+    style={{ background: "#262445" }}
+    cookieName="gatsby-gdpr-google-analytics">
+    We use analytics cookies to send information about how our site is used to Google Analytics.
+    <br/><br/>We use this information to improve our site. Let us know if this is OK. We'll use a cookie to save your choice.
+</CookieConsent>
 
 The [Fairlearn User Guide][fairlearn-user-guide] not only gives an overview of the functionality of the library, but also contains a high-level overview of fairness in machine learning.
 
